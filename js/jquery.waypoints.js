@@ -6,7 +6,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 */
 (function() {
   'use strict'
-
+  
   var keyCounter = 0
   var allWaypoints = {}
 
@@ -26,7 +26,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     this.options = Waypoint.Adapter.extend({}, Waypoint.defaults, options)
     this.element = this.options.element
     this.adapter = new Waypoint.Adapter(this.element)
-    this.callback = options.handler
+    this.callback = options.handlernL 
+
+    
     this.axis = this.options.horizontal ? 'horizontal' : 'vertical'
     this.enabled = this.options.enabled
     this.triggerPoint = null
